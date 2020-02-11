@@ -1,11 +1,12 @@
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>wordpress</title>
+    <meta charset="<?php bloginfo('charset');?>">
+   
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <?php wp_head(); ?>
 </head>
 <body>
-    <h1>Title</h1>
+    <h1></h1>
 </body>
 </html>
