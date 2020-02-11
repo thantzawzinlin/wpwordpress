@@ -5,9 +5,9 @@
                 <?php while(have_posts()):the_post(); ?>
                     <article class="post">
                         <h3>
-                            <a href="<?php the_permalink();?>">
+                           
                             <?php the_title(); ?>
-                            </a>
+                          
                         </h3>
                         <div class="meta">
                         Created By <?php the_author(); ?>
@@ -19,10 +19,9 @@
                                 <?php the_post_thumbnail(); ?>
                             </div>
                         <?php endif; ?>
-                        <?php the_excerpt(); ?>
-                         <a href="<?php the_permalink();?>" class="button">
-                           Read More
-                        </a>
+                        
+                        <?php the_content(); ?>
+                        
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>

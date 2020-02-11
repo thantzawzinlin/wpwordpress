@@ -40,6 +40,27 @@ header h1{
 .main{
     margin:15px 0;
 }
+article.post{
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+article.post a.button{
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    padding:10px 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.meta{
+    background:#333;
+    color:#fff;
+    padding:5px;
+}
+.post_thumbnail img{
+    width:100%;
+    height: auto;
+}
 footer{
     background:#393939;
     color:#fff;
