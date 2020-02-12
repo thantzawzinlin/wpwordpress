@@ -39,6 +39,8 @@ header h1{
 }
 .main{
     margin:15px 0;
+    float:left;
+    width:68%;
 }
 article.post{
     border-bottom: 1px solid #ccc;
@@ -56,6 +58,9 @@ article.post a.button{
     background:#333;
     color:#fff;
     padding:5px;
+}
+.meta a{
+    color:#fff;
 }
 .post_thumbnail img{
     width:100%;
@@ -84,6 +89,38 @@ article.post a.button{
    background:gold;
    padding:10px 7px;
    color:blue;
+}
+.clr{
+    clear:both;
+}
+.sidebar{
+    width:28%;
+    float: right;
+    
+}
+.side-widget{
+    
+    margin:30px 0;
+    padding:10px;
+    border:1px solid #ccc;
+
+}
+.side-widget li{
+    list-style-type: none;
+}
+.side-widget a{
+    text-decoration: none;
+}
+.comment-respond label{
+    display: none;
+}
+.comment-reply-title{
+    color:rgb(47, 137, 255);
+}
+.form-submit input{
+    border-radius: 5px;
+    padding:15px 10px;
+    background: #cc44ee;
 }
 
 

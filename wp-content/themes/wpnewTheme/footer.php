@@ -1,4 +1,13 @@
- <footer>
+ <div class="sidebar">
+                    <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
+                        
+                        <?php dynamic_sidebar( 'sidebar' ); ?>
+                    
+                    <?php endif; ?>
+            </div>
+            <div class="clr"></div>
+    </div>
+<footer>
             <div class="container">
                 <p>Copy Right&copy; <?php the_time("Y");?></p>   
             </div>

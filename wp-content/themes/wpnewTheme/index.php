@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-    <div class="main">
-        <div class="container">
+    <div class="container">
+        <div class="main">        
             <?php if(have_posts()):?>
                 <?php while(have_posts()):the_post(); ?>
                     <article class="post">
@@ -10,7 +10,10 @@
                             </a>
                         </h3>
                         <div class="meta">
-                        Created By <?php the_author(); ?>
+                        Created By 
+                        <a href="<?php get_author_posts_url(get_the_author_meta('ID')) ; ?>">
+                        <?php the_author(); ?>
+                        </a>
                         On <?php the_date("F j, Y, g:i a"); ?>
                         </div>
                         <?php if(has_post_thumbnail()) : ?>
@@ -29,9 +32,11 @@
 
             <?php echo wpautop('Sorry,NO posts were found');?>
 
-
+               
 
             <?php endif;?>
+            
         </div>
-    </div>
+        
+   
    <?php get_footer(); ?>
